@@ -8,7 +8,7 @@ const onRequest = (request, response) => {
   console.log(request.url);
 
   switch (request.url) {
-    case '/party':
+    case '/party.mp4':
       mediaHandler.getParty(request, response);
       break;
 
