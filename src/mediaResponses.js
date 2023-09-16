@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const getParty = (request, response, fileName, contentType) => {
+const getFile = (request, response, fileName, contentType) => {
     const file = path.resolve(__dirname, `../client/${fileName}`);
 
     fs.stat(file, (err, stats) => {
@@ -35,4 +35,4 @@ const getParty = (request, response, fileName, contentType) => {
     });
 };
 
-module.exports = { getParty };
+module.exports = { getFile };
